@@ -1,0 +1,354 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.wrap{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	font-family:Microsoft JhengHei
+	
+}
+.header{
+	background-color: #f6f6f6;
+	margin-bottom: 8px;
+}
+.header ul{
+	float: right;
+
+}
+.header li{	
+	float: left;
+}
+.fb a {
+	background-image: url(../img/images/fb.png);
+	background-repeat: no-repeat;
+	text-indent: 16px;
+	height: 16px;
+	float: left;
+	color: #667aad;
+	border-right: 1px solid #cccccc;
+	padding-right: 10px;
+	margin: 10px 0 ;
+	text-decoration: none;
+}
+.tw a{
+	background-image: url(../img/images/tw.png);
+	background-repeat: no-repeat;
+	text-indent: 16px;
+	height: 16px;
+	float: left;
+	color: #00aaec;
+	margin: 10px 20px 10px 10px;
+	text-decoration: none;
+}
+.clearfix{
+	clear: both;
+}
+.topmenu h1 a{
+	background-image: url(../img/images/logo.png);
+	display: block;
+	width: 171px;
+	height: 36px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 20px;
+	float: left;
+}
+.topmenu h1 a:hover{
+	animation-name: bounceIn;
+}
+.topmenu > ul{
+	float: right;
+}
+.topmenu > ul > li{
+	float: left;
+}
+.topmenu> ul> li >a{
+	text-decoration: none;	
+	color: #42d3a9;	
+	margin: 0 15px;
+	padding: 15px 10px;
+	display: block;
+}
+.topmenu > ul > li> a:hover {
+	border-bottom: 3px #42d3a9 solid;
+}
+.topmenu i{
+	margin-left: 10px;
+}
+.topmenu li:hover{
+	animation-name: bounceIn;
+	z-index: 10;
+}
+.dropdown{
+	position: relative;
+}
+.dropdown ul{
+	margin-top: 13px;
+	background: rgb(0,0,0,80%);
+	display: none; 
+    position: absolute;  
+   	top: 36px;
+    z-index: 10;
+    width: 248px;
+}
+.dropdown li:hover{
+	background: rgb(255,255,255,30%) ;
+}
+/*
+.dropdown:hover ul{
+	display: block;
+}*/
+.dropdown li{
+	padding: 15px 0 15px 25px;
+}
+.dropdown a{
+	text-decoration: none;
+	color: #42d3a9;	
+}
+.swiper-container {
+    width: 1000px;
+    height: 398px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.swiper-container h2{
+	box-sizing: border-box;
+	width: 1000px;
+	color: white;
+	font-size: 40px;
+	line-height: 1.4;
+	font-weight: bold;
+	position: absolute;
+ 	top:50%;
+ 	transform: translate(0, -50%);
+ 	-webkit-transform: translate(0, -50%);
+ 	-moz-transform: translate(0, -50%);
+	padding: 40px 0 40px 20px;
+	background-color: rgb(0,0,0,15%);
+	z-index: 1;
+}
+.contain{
+	line-height: 1.5;
+	margin-bottom: 60px;
+	width: 1000px;
+}
+.contain  h3{
+	font-size: 20px;
+	margin: 6px;
+	font-weight: bold;
+}
+.box-HTML{
+	box-sizing: border-box;
+	float: left;
+	width: 300px;
+	height: 360px;
+	text-align: center;
+	padding: 25px 20px;
+	box-shadow: 0 3px 3px #bebdbd;
+	margin-left: 20px;
+}
+.box-RWD{
+	box-sizing: border-box;
+	float: left;
+	width: 300px;
+	height: 360px;
+	margin: 0 30px;
+	text-align: center;
+	padding: 25px 20px;
+	box-shadow: 0 3px 3px #bebdbd;
+}
+.box-jQuery{
+	box-sizing: border-box;
+	float: left;
+	width: 300px;
+	height: 360px;
+	text-align: center;
+	padding: 25px 20px;
+	box-shadow: 0 3px 3px #bebdbd;	
+	margin-right: 20px;
+}
+.contain p ,ul{
+	text-align: left;
+}
+.box-jQuery ul{
+	list-style-type: disc;
+	padding-left: 20px;
+}
+.box-RWD img{
+	padding: 25px;
+}
+.box-jQuery img{
+	padding: 6px;
+}
+.contain{
+	margin-bottom: 50px;
+}
+.course{
+	margin-bottom: 50px;
+	padding: 0 100px;
+}
+.course h3{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 800px;
+}
+.table td,th{
+	padding: 10px 20px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+.table th{
+	text-align: left;
+	background-color: #f7f7f7;
+}
+.highlight{
+	color: #58ba9c;
+}
+.information{
+	background: linear-gradient(to bottom , #00654b , #009871);
+	padding: 20px;
+
+}
+.information h3{
+	text-align: center;
+	color: white;
+	line-height: 1.5;
+	margin: 20px 0;
+	font-size: 24px;
+}
+input[type="text"]{
+	display: block;
+	width: 460px;
+	box-sizing: border-box;
+	margin:5px 0 12px ;
+	padding: 3px;
+	border-radius: 3px;
+	border: 0;
+}
+input[type="text"]:hover{
+	-webkit-box-shadow: 1px 1px 5px inset;
+}
+label{
+	color: white;
+}
+#sendout{
+	float: right;
+	background: #00cc99;
+	border: 0;
+	color: white;
+	padding: 5px 20px;
+	font-size: 15px;
+	border-radius: 3px;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+#sendout:hover{
+	background: #00684e;
+}
+.personal{	
+	float: right;
+}
+textarea{
+	box-sizing: border-box;
+	width:460px; 
+	height: 200px;
+	border-radius: 5px ;
+	float: left;
+	padding: 10px;
+}
+textarea:hover{
+	-webkit-box-shadow: 3px 3px 5px #b4b3b3 inset;
+}
+.footer  h2 a{
+	background: no-repeat url(../img/images/b&w-logo_07.png);
+	width: 171px;
+	height: 36px;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 20px 20px 40px;
+	float: left;
+}
+.contact{
+	float: right;
+	line-height: 1.5;
+	margin: 20px;
+}
+.contact span{
+	color: #e55995;
+}
+.to-top{
+	width: 60px;
+	height: 60px;
+	background: #42d3a9;
+	float: right;
+	border-radius: 30px;
+	text-align: center;
+	line-height: 60px;
+	position: fixed;
+	bottom:20px;
+	right: 20px;
+}
+.to-top a{
+	color: #fff;
+	text-decoration: none;
+}
+.to-top:hover{
+	background: #009871;
+	cursor: pointer;
+	animation-name: bounceIn;
+	box-shadow: 5px 5px 10px grey;
+}
